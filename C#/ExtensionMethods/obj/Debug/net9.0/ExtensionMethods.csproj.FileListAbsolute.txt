@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\bin\Debug\net9.0\ExtensionMethods.exe
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\bin\Debug\net9.0\ExtensionMethods.deps.json
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\bin\Debug\net9.0\ExtensionMethods.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\bin\Debug\net9.0\ExtensionMethods.dll
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\bin\Debug\net9.0\ExtensionMethods.pdb
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.dll
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\refint\ExtensionMethods.dll
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.pdb
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ExtensionMethods.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\ExtensionMethods\obj\Debug\net9.0\ref\ExtensionMethods.dll

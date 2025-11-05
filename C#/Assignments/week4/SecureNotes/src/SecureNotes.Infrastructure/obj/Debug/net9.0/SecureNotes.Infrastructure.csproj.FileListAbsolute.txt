@@ -1,0 +1,15 @@
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\bin\Debug\net9.0\SecureNotes.Infrastructure.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\bin\Debug\net9.0\SecureNotes.Infrastructure.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\bin\Debug\net9.0\SecureNotes.Infrastructure.pdb
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\bin\Debug\net9.0\SecureNotes.Core.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\bin\Debug\net9.0\SecureNotes.Core.pdb
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.csproj.AssemblyReference.cache
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNo.79D3DF3D.Up2Date
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\refint\SecureNotes.Infrastructure.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\SecureNotes.Infrastructure.pdb
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Infrastructure\obj\Debug\net9.0\ref\SecureNotes.Infrastructure.dll

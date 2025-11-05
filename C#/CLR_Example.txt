@@ -1,0 +1,3 @@
+vbc -target:library -out:VBLibrary.dll VBLibrary.vb
+
+csc -reference:VBLibrary.dll Program.cs

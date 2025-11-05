@@ -1,0 +1,15 @@
+Date processed: 2025-09-29 14:02:11
+Total returns: 5
+Counts by condition:
+- New: 1
+- Good: 1
+- Worn: 1
+- Damaged: 1
+- Unknown: 1
+
+Top 5 titles by penalty (desc):
+1. 456,Don Quixote,Miguel de Cervantes,Damaged -> "Don Quixote" by Miguel de Cervantes (Penalty: 10)
+2. 123,The Hobbit,J.R.R. Tolkien,Worn -> "The Hobbit" by J.R.R. Tolkien (Penalty: 3)
+3. 321,Good Read,Some Author,Good -> "Good Read" by Some Author (Penalty: 0)
+4. 789,New Book,New Author,New -> "New Book" by New Author (Penalty: 0)
+5. 654,Unknown Condition,Another Author,Unknown -> "Unknown Condition" by Another Author (Penalty: 0)

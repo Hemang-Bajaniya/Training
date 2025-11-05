@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DailySummary>
+  <Processed>2025-10-02 19:19:14</Processed>
+  <TotalReturns>10</TotalReturns>
+  <ConditionCounts>
+    <Condition Name="New" Count="2" />
+    <Condition Name="Good" Count="3" />
+    <Condition Name="Worn" Count="3" />
+    <Condition Name="Damaged" Count="2" />
+  </ConditionCounts>
+  <TopBooks>
+    <Book Id="5">
+      <Title>Game of Thrones</Title>
+      <Author>George R.R. Martin</Author>
+      <Penalty>10</Penalty>
+    </Book>
+    <Book Id="9">
+      <Title>The White Tiger</Title>
+      <Author>Aravind Adiga</Author>
+      <Penalty>10</Penalty>
+    </Book>
+    <Book Id="3">
+      <Title>Harry Potter and the Sorcerer's Stone</Title>
+      <Author>J.K. Rowling</Author>
+      <Penalty>3</Penalty>
+    </Book>
+    <Book Id="6">
+      <Title>Clash of Kings</Title>
+      <Author>George R.R. Martin</Author>
+      <Penalty>3</Penalty>
+    </Book>
+    <Book Id="10">
+      <Title>Midnight’s Children</Title>
+      <Author>Salman Rushdie</Author>
+      <Penalty>3</Penalty>
+    </Book>
+  </TopBooks>
+</DailySummary>

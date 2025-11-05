@@ -1,0 +1,11 @@
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\bin\Debug\net9.0\UtilsLibrary.deps.json
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\bin\Debug\net9.0\UtilsLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\bin\Debug\net9.0\UtilsLibrary.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\refint\UtilsLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\UtilsLibrary.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\UtilsLibrary\obj\Debug\net9.0\ref\UtilsLibrary.dll

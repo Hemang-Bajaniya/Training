@@ -1,0 +1,8 @@
+Top Books by Title Length:
+- Game of Thrones (15 chars)
+- Lord of the Rings (16 chars)
+
+Condition Counts:
+Good: 2
+Damaged: 1
+New: 1

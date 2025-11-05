@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SecureNotes.Core/1.0.0": {
+        "runtime": {
+          "SecureNotes.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SecureNotes.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

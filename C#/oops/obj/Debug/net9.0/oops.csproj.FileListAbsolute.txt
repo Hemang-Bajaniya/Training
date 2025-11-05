@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\oops\bin\Debug\net9.0\oops.exe
+E:\RKIT\Pre_Joining_Training\C#\oops\bin\Debug\net9.0\oops.deps.json
+E:\RKIT\Pre_Joining_Training\C#\oops\bin\Debug\net9.0\oops.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\oops\bin\Debug\net9.0\oops.dll
+E:\RKIT\Pre_Joining_Training\C#\oops\bin\Debug\net9.0\oops.pdb
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.dll
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\refint\oops.dll
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.pdb
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\oops.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\oops\obj\Debug\net9.0\ref\oops.dll

@@ -1,0 +1,15 @@
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\bin\Debug\net9.0\Extensions.deps.json
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\bin\Debug\net9.0\Extensions.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\bin\Debug\net9.0\Extensions.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\bin\Debug\net9.0\Domain.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\bin\Debug\net9.0\Domain.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.csproj.AssemblyReference.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.csproj.Up2Date
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\refint\Extensions.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\Extensions.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Extensions\obj\Debug\net9.0\ref\Extensions.dll

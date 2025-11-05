@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>OrmLiteDemo.Program</StartupObject>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="MySql.Data" Version="9.5.0" />
+    <PackageReference Include="ServiceStack.OrmLite.MySqlConnector" Version="8.9.0" />
+  </ItemGroup>
+
+</Project>

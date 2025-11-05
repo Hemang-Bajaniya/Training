@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\bin\Debug\net9.0\Dynamic_Type.exe
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\bin\Debug\net9.0\Dynamic_Type.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\bin\Debug\net9.0\Dynamic_Type.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\bin\Debug\net9.0\Dynamic_Type.dll
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\bin\Debug\net9.0\Dynamic_Type.pdb
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.dll
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\refint\Dynamic_Type.dll
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.pdb
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\Dynamic_Type.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Dynamic_Type\obj\Debug\net9.0\ref\Dynamic_Type.dll

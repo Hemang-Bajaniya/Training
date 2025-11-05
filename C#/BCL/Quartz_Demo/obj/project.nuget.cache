@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zRNzYG2VfNQ=",
+  "success": true,
+  "projectFilePath": "E:\\RKIT\\Pre_Joining_Training\\C#\\BCL\\Quartz_Demo\\Quartz_Demo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\quartz\\3.15.0\\quartz.3.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}

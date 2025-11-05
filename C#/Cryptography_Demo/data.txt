@@ -1,0 +1,2 @@
+C# provides robust capabilities for implementing various cryptographic operations through its System.Security.Cryptography namespace. 
+This namespace offers classes for both symmetric and asymmetric encryption, hashing, digital signatures, and key management.

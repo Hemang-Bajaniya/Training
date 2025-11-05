@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\datetime\bin\Debug\net9.0\datetime.exe
+E:\RKIT\Pre_Joining_Training\C#\datetime\bin\Debug\net9.0\datetime.deps.json
+E:\RKIT\Pre_Joining_Training\C#\datetime\bin\Debug\net9.0\datetime.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\datetime\bin\Debug\net9.0\datetime.dll
+E:\RKIT\Pre_Joining_Training\C#\datetime\bin\Debug\net9.0\datetime.pdb
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.dll
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\refint\datetime.dll
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.pdb
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\datetime.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\datetime\obj\Debug\net9.0\ref\datetime.dll

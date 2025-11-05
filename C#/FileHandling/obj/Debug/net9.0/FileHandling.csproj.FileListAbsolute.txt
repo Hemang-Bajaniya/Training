@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\bin\Debug\net9.0\FileHandling.exe
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\bin\Debug\net9.0\FileHandling.deps.json
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\bin\Debug\net9.0\FileHandling.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\bin\Debug\net9.0\FileHandling.dll
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\bin\Debug\net9.0\FileHandling.pdb
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.dll
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\refint\FileHandling.dll
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.pdb
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\FileHandling.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\FileHandling\obj\Debug\net9.0\ref\FileHandling.dll

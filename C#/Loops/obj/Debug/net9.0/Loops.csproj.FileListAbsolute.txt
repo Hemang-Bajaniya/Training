@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Loops\bin\Debug\net9.0\Loops.exe
+E:\RKIT\Pre_Joining_Training\C#\Loops\bin\Debug\net9.0\Loops.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Loops\bin\Debug\net9.0\Loops.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Loops\bin\Debug\net9.0\Loops.dll
+E:\RKIT\Pre_Joining_Training\C#\Loops\bin\Debug\net9.0\Loops.pdb
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.dll
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\refint\Loops.dll
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.pdb
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\Loops.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Loops\obj\Debug\net9.0\ref\Loops.dll

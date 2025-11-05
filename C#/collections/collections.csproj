@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartUpObject>CollectionsDemo.DictDemo</StartUpObject>
+    <StartUpObject>CollectionsDemo.ArrayListDemo</StartUpObject>
+    <StartUpObject>CollectionsDemo.QueueDemo</StartUpObject>
+    <StartUpObject>CollectionsDemo.StackDemo</StartUpObject>
+    <StartUpObject>CollectionsDemo.HashSetDemo</StartUpObject>
+    <StartUpObject>CollectionsDemo.BitArrayDemo</StartUpObject>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

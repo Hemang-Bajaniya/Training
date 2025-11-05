@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Linq\bin\Debug\net9.0\Linq.exe
+E:\RKIT\Pre_Joining_Training\C#\Linq\bin\Debug\net9.0\Linq.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Linq\bin\Debug\net9.0\Linq.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Linq\bin\Debug\net9.0\Linq.dll
+E:\RKIT\Pre_Joining_Training\C#\Linq\bin\Debug\net9.0\Linq.pdb
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.dll
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\refint\Linq.dll
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.pdb
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\Linq.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Linq\obj\Debug\net9.0\ref\Linq.dll

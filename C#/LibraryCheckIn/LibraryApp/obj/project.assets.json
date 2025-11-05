@@ -1,0 +1,163 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Extensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Extensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Extensions.dll": {}
+        }
+      },
+      "Ingestion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Ingestion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ingestion.dll": {}
+        }
+      },
+      "Io/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Extensions": "1.0.0",
+          "Ingestion": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Io.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Io.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Extensions/1.0.0": {
+      "type": "project",
+      "path": "../Extensions/Extensions.csproj",
+      "msbuildProject": "../Extensions/Extensions.csproj"
+    },
+    "Ingestion/1.0.0": {
+      "type": "project",
+      "path": "../Ingestion/Ingestion.csproj",
+      "msbuildProject": "../Ingestion/Ingestion.csproj"
+    },
+    "Io/1.0.0": {
+      "type": "project",
+      "path": "../Io/Io.csproj",
+      "msbuildProject": "../Io/Io.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Domain >= 1.0.0",
+      "Extensions >= 1.0.0",
+      "Io >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\LibraryApp\\LibraryApp.csproj",
+      "projectName": "LibraryApp",
+      "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\LibraryApp\\LibraryApp.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\LibraryApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Domain\\Domain.csproj": {
+              "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Domain\\Domain.csproj"
+            },
+            "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Extensions\\Extensions.csproj": {
+              "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Extensions\\Extensions.csproj"
+            },
+            "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Io\\Io.csproj": {
+              "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\LibraryCheckIn\\Io\\Io.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.App\\SecureNotes.App.csproj": {}
+  },
+  "projects": {
+    "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.App\\SecureNotes.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.App\\SecureNotes.App.csproj",
+        "projectName": "SecureNotes.App",
+        "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.App\\SecureNotes.App.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj": {
+                "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj"
+              },
+              "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\SecureNotes.Infrastructure.csproj": {
+                "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\SecureNotes.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj",
+        "projectName": "SecureNotes.Core",
+        "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\SecureNotes.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\SecureNotes.Infrastructure.csproj",
+        "projectName": "SecureNotes.Infrastructure",
+        "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\SecureNotes.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj": {
+                "projectPath": "E:\\RKIT\\Pre_Joining_Training\\C#\\Assignments\\week4\\SecureNotes\\src\\SecureNotes.Core\\SecureNotes.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

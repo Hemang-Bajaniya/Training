@@ -1,0 +1,6 @@
+@ReadingRoomManager_HostAddress = http://localhost:7066
+
+GET {{ReadingRoomManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Serialization\bin\Debug\net9.0\Serialization.exe
+E:\RKIT\Pre_Joining_Training\C#\Serialization\bin\Debug\net9.0\Serialization.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Serialization\bin\Debug\net9.0\Serialization.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Serialization\bin\Debug\net9.0\Serialization.dll
+E:\RKIT\Pre_Joining_Training\C#\Serialization\bin\Debug\net9.0\Serialization.pdb
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.dll
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\refint\Serialization.dll
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.pdb
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\Serialization.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Serialization\obj\Debug\net9.0\ref\Serialization.dll

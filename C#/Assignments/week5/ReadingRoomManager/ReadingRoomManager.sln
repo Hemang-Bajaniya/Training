@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingRoomManager", "ReadingRoomManager.csproj", "{62C07BA3-CC7D-4418-ABB8-363FD216477A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7BEA2DF9-1382-4630-8E7D-3CEB0E9690D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoomTests", "RoomTests", "{3FB16356-3BBC-4873-8E70-CB12B8DFE7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingRoom.Api.Tests", "Tests\RoomTests\ReadingRoom.Api.Tests\ReadingRoom.Api.Tests.csproj", "{85445716-0AD5-487F-ACDA-601AD400CA76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C07BA3-CC7D-4418-ABB8-363FD216477A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C07BA3-CC7D-4418-ABB8-363FD216477A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C07BA3-CC7D-4418-ABB8-363FD216477A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C07BA3-CC7D-4418-ABB8-363FD216477A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85445716-0AD5-487F-ACDA-601AD400CA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85445716-0AD5-487F-ACDA-601AD400CA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85445716-0AD5-487F-ACDA-601AD400CA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85445716-0AD5-487F-ACDA-601AD400CA76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FB16356-3BBC-4873-8E70-CB12B8DFE7EE} = {7BEA2DF9-1382-4630-8E7D-3CEB0E9690D7}
+		{85445716-0AD5-487F-ACDA-601AD400CA76} = {3FB16356-3BBC-4873-8E70-CB12B8DFE7EE}
+	EndGlobalSection
+EndGlobal

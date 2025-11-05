@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SecureNotes.App/1.0.0": {
+        "dependencies": {
+          "SecureNotes.Core": "1.0.0",
+          "SecureNotes.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "SecureNotes.App.dll": {}
+        }
+      },
+      "SecureNotes.Core/1.0.0": {
+        "runtime": {
+          "SecureNotes.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SecureNotes.Infrastructure/1.0.0": {
+        "dependencies": {
+          "SecureNotes.Core": "1.0.0"
+        },
+        "runtime": {
+          "SecureNotes.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SecureNotes.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecureNotes.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecureNotes.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

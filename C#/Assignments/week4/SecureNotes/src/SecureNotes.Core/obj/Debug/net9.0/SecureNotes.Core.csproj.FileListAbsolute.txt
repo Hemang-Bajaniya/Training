@@ -1,0 +1,11 @@
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\bin\Debug\net9.0\SecureNotes.Core.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\bin\Debug\net9.0\SecureNotes.Core.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\bin\Debug\net9.0\SecureNotes.Core.pdb
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\refint\SecureNotes.Core.dll
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\SecureNotes.Core.pdb
+E:\RKIT\Pre_Joining_Training\C#\Assignments\week4\SecureNotes\src\SecureNotes.Core\obj\Debug\net9.0\ref\SecureNotes.Core.dll

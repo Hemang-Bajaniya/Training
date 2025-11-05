@@ -1,0 +1,11 @@
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\bin\Debug\net9.0\Domain.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\bin\Debug\net9.0\Domain.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\Domain.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryCheckIn\Domain\obj\Debug\net9.0\ref\Domain.dll

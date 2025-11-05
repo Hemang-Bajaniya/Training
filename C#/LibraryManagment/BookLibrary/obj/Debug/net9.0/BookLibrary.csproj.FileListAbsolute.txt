@@ -1,0 +1,11 @@
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\bin\Debug\net9.0\BookLibrary.deps.json
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\bin\Debug\net9.0\BookLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\bin\Debug\net9.0\BookLibrary.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\refint\BookLibrary.dll
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\BookLibrary.pdb
+E:\RKIT\Pre_Joining_Training\C#\LibraryManagment\BookLibrary\obj\Debug\net9.0\ref\BookLibrary.dll

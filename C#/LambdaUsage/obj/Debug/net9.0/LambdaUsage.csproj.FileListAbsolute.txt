@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\bin\Debug\net9.0\LambdaUsage.exe
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\bin\Debug\net9.0\LambdaUsage.deps.json
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\bin\Debug\net9.0\LambdaUsage.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\bin\Debug\net9.0\LambdaUsage.dll
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\bin\Debug\net9.0\LambdaUsage.pdb
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.dll
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\refint\LambdaUsage.dll
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.pdb
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\LambdaUsage.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\LambdaUsage\obj\Debug\net9.0\ref\LambdaUsage.dll

@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\BCL\bin\Debug\net9.0\BCL.exe
+E:\RKIT\Pre_Joining_Training\C#\BCL\bin\Debug\net9.0\BCL.deps.json
+E:\RKIT\Pre_Joining_Training\C#\BCL\bin\Debug\net9.0\BCL.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\BCL\bin\Debug\net9.0\BCL.dll
+E:\RKIT\Pre_Joining_Training\C#\BCL\bin\Debug\net9.0\BCL.pdb
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.dll
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\refint\BCL.dll
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.pdb
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\BCL.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\BCL\obj\Debug\net9.0\ref\BCL.dll

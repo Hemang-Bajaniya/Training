@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Datatable\bin\Debug\net9.0\Datatable.exe
+E:\RKIT\Pre_Joining_Training\C#\Datatable\bin\Debug\net9.0\Datatable.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Datatable\bin\Debug\net9.0\Datatable.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Datatable\bin\Debug\net9.0\Datatable.dll
+E:\RKIT\Pre_Joining_Training\C#\Datatable\bin\Debug\net9.0\Datatable.pdb
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.dll
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\refint\Datatable.dll
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.pdb
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\Datatable.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Datatable\obj\Debug\net9.0\ref\Datatable.dll

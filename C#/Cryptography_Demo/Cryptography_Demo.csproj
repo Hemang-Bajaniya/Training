@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <StartupObject>AES_Example</StartupObject>
+    <StartupObject>AES_Example</StartupObject> -->
+    <StartupObject>RSA_Example</StartupObject>
+    <StartupObject>DigitalSign_Demo</StartupObject>
+    <StartupObject>Hash_Demo</StartupObject>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

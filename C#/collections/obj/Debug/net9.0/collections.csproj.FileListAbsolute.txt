@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\collections\bin\Debug\net9.0\collections.exe
+E:\RKIT\Pre_Joining_Training\C#\collections\bin\Debug\net9.0\collections.deps.json
+E:\RKIT\Pre_Joining_Training\C#\collections\bin\Debug\net9.0\collections.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\collections\bin\Debug\net9.0\collections.dll
+E:\RKIT\Pre_Joining_Training\C#\collections\bin\Debug\net9.0\collections.pdb
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.dll
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\refint\collections.dll
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.pdb
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\collections.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\collections\obj\Debug\net9.0\ref\collections.dll

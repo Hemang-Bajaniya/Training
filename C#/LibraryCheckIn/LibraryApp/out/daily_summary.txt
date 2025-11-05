@@ -1,0 +1,16 @@
+Daily Summary Report
+Processed: 2025-10-02 19:19:14
+Total Returns: 10
+
+Condition Counts:
+- New: 2
+- Good: 3
+- Worn: 3
+- Damaged: 2
+
+Top 5 Books by Penalty:
+Game of Thrones by George R.R. Martin - Penalty 10
+The White Tiger by Aravind Adiga - Penalty 10
+Harry Potter and the Sorcerer's Stone by J.K. Rowling - Penalty 3
+Clash of Kings by George R.R. Martin - Penalty 3
+Midnight’s Children by Salman Rushdie - Penalty 3

@@ -1,0 +1,14 @@
+E:\RKIT\Pre_Joining_Training\C#\Generics\bin\Debug\net9.0\Generics.exe
+E:\RKIT\Pre_Joining_Training\C#\Generics\bin\Debug\net9.0\Generics.deps.json
+E:\RKIT\Pre_Joining_Training\C#\Generics\bin\Debug\net9.0\Generics.runtimeconfig.json
+E:\RKIT\Pre_Joining_Training\C#\Generics\bin\Debug\net9.0\Generics.dll
+E:\RKIT\Pre_Joining_Training\C#\Generics\bin\Debug\net9.0\Generics.pdb
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.GeneratedMSBuildEditorConfig.editorconfig
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.AssemblyInfoInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.AssemblyInfo.cs
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.csproj.CoreCompileInputs.cache
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.dll
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\refint\Generics.dll
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.pdb
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\Generics.genruntimeconfig.cache
+E:\RKIT\Pre_Joining_Training\C#\Generics\obj\Debug\net9.0\ref\Generics.dll
