@@ -1,0 +1,50 @@
+header{
+    border: 2px solid skyblue;
+    width: 20%;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    transition: .3s ease;
+}
+.box{
+    border: 2px solid coral;
+    background-color: #7d7;
+    border-radius: 6px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    filter: blur(5px);
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.box h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.box:hover{
+    filter: none;
+    transform: scale(1.1);
+}
+.box h1{
+    margin-left: auto;
+}
+
+.box p{
+    text-indent: 20px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            border: 2px solid #333;
+            margin: 10px;
+            background-color: lightgray;
+        }
+
+        .visible {
+            background-color: lightblue;
+            overflow: visible;
+        }
+
+        .hidden {
+            background-color: lightgreen;
+            overflow: hidden;
+        }
+
+        .auto {
+            background-color: lightcoral;
+            overflow: auto;
+        }
+
+        .scroll {
+            background-color: lightyellow;
+            overflow: scroll;
+            /* Scrollbars always visible */
+        }
+
+        .overflow-x {
+            background-color: lightpink;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .overflow-y {
+            background-color: lightcyan;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .content {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">CSS Overflow Demo</h1>
+    <div class="container">
+
+        <!-- Overflow Visible -->
+        <div class="box visible">
+            <div class="content">This content is visible and overflows outside the box.</div>
+        </div>
+
+        <!-- Overflow Hidden -->
+        <div class="box hidden">
+            <div class="content">This content is clipped. The overflow is hidden.</div>
+        </div>
+
+        <!-- Overflow Auto -->
+        <div class="box auto">
+            <div class="content">This content is too long to fit in the box. Scrollbars will appear if needed.</div>
+        </div>
+
+        <!-- Overflow Scroll -->
+        <div class="box scroll">
+            <div class="content">This content is too long, and scrollbars will always appear, even if not needed.</div>
+        </div>
+
+    </div>
+
+    <h2 style="text-align: center;">Overflow X and Y</h2>
+    <div class="container">
+
+        <!-- Overflow X -->
+        <div class="box overflow-x">
+            <div class="content">This content is too long horizontally. Only horizontal scrollbar appears.</div>
+        </div>
+
+        <!-- Overflow Y -->
+        <div class="box overflow-y">
+            <div class="content">This content is too tall vertically. Only vertical scrollbar appears.</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

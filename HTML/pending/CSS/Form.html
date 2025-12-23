@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        form {
+            width: 200px;
+            height: 200px;
+            background: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        input {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 6px 10px;
+        }
+
+        input[type="submit"] {
+            width: 80%;
+            background: linear-gradient(180deg, lightgreen, green);
+            transition: all .2s ease;
+        }
+        
+        input[type="submit"]:hover{
+                        background: linear-gradient(0deg, lightgreen, green);
+
+}
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3>Form</h3>
+        <input type="text" required pattern="[A-Za-z#!]" placeholder="Enter your name">
+        <input type="password" required placeholder="Enter your password">
+
+        <input type="submit" value="Login">
+    </form>
+</body></html>

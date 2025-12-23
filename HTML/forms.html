@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: rgb(14, 18, 22);
+            color: white;
+            font-family: poppins;
+            outline: none;
+        }
+
+        form {
+            border: 2px solid white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        input {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            /* outline: none; */
+        }
+
+        button {
+            cursor: pointer;
+            margin: 4px;
+            padding: 10px 12px;
+            color: slategrey;
+            background-color: white;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(214, 236, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="post" enctype="multipart/form-data" autocomplete="on">
+
+        <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe">
+        </div>
+
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx">
+        </div>
+
+        <div>
+            <label for="color">Choose Theme Color</label>
+            <input type="color" id="color" name="theme" value="#ff6600">
+        </div>
+
+        <div>
+            <label>Payment Method</label>
+            <select name="payment" required>
+                <option disabled selected>Choose one</option>
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+                <option value="upi">UPI</option>
+            </select>
+        </div>
+
+        <input type="hidden" name="formId" value="Form-A">
+
+        <div>
+            <input type="submit" value="Submit Form">
+            <button type="reset">Clear Form</button>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>

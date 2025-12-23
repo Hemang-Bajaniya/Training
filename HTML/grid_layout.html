@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .container {
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            height: auto;
+            /* width: 100%; */
+        }
+
+        .container div {
+            background-color: crimson;
+            /* height: 100px; */
+            /* aspect-ratio: 1; */
+            margin: 1rem 1.5rem;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 50% auto 20%;
+            gap: 10px 20px;
+            grid-template-columns: [c1] 300px [c2] 300px [c3];
+
+            grid-template-rows: [r1] 400px [r2] 400px [r3];
+
+        }
+
+        .container div:nth-child(3),
+        .container div:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: blue;
+
+            grid-column-start: c1;
+            grid-column-end: c3;
+        }
+
+        .container div:nth-child(2) {
+            grid-row: r1/r3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

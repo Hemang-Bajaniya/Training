@@ -1,0 +1,12 @@
+p{
+    background: linear-gradient(to left,skyblue, white);
+    background-repeat: no-repeat;
+}
+
+h1{
+    background:linear-gradient(to right, lightgreen, white);
+}
+
+h3{
+    background: linear-gradient(rgb(95, 121, 206), rgb(216, 143, 95));
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        p {
+            border: 2px solid red;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        p,
+        ul {
+            border: 2px solid rebeccapurple;
+            padding: 0.2em;
+        }
+
+        .block,
+        li {
+            border: 2px solid blue;
+            padding: 0.2em;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .block {
+            display: inline;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid rgb(114, 164, 206);
+            margin: 15px;
+            background-color: rgb(19, 81, 102);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit laboriosam in quod sit nesciunt quidem,
+        natus atque? Eius, accusamus necessitatibus! Sequi illo voluptatum officia nesciunt? Dicta hic labore dolorem.
+    </p>
+
+    <p>I am a paragraph. A short one.</p>
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+    <p>
+        I am another paragraph. Some of the <span class="block">words</span> have been
+        wrapped in a <span>span element</span>.
+    </p>
+
+    <div class="box">This is a box</div>
+</body>
+
+</html>

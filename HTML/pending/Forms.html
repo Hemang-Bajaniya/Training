@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+<style>
+    body
+    {
+        background-color: #ffffcc;
+    }
+    input:focus
+    {
+        background-color: lightblue;
+    }
+    input:hover
+    {
+        color: #7d7;
+        border-color:coral;
+        border-style: dashed;
+    }
+    select:hover
+    {
+        color: skyblue;
+    }
+</style>
+</head>
+<body>
+    <form method="post"> <!--"post"-secure, slow || "get"-fast, not show data-->
+        
+    <center>
+        <h2>this is a login from</h2>
+    </center>
+
+    <input type="hidden" name="page" value="10"> <!--show in server not in page-->
+    
+    <fieldset name="personal info">
+        <legend>Personal Information</legend>
+        First Name:   
+        <input type="text" name="first_name" value="first Name">
+        <br>
+        Last Name:   
+        <input type="text" name="last_name" value="last Name" size="30">
+        <br>
+        Middle Name:   
+        <input type="text" name="middle_name" size="30">
+        <br>
+        <br>
+
+        D.O.B
+        <input type="text" name="date" maxlength="2">
+        <br>
+        Y.O.B
+        <input type="text" name="year" maxlength="4">
+        <br>
+        <br>
+        
+        Gender:
+        <br>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br>
+        <br>
+        
+        What is your Hobbies?
+        <br>
+        <input type="checkbox" name="hobby" value="swim">Swiming
+        <input type="checkbox" name="hobby" value="draw">Drawing
+        <input type="checkbox" name="hobby" value="games" checked>Playing Games
+        <input type="checkbox" name="hobby" value="cricket">Cricket
+    </fieldset>
+        <br>
+        <br>
+
+    <fieldset name="login info">
+        <legend>Login Information</legend>
+
+        Choose your department:
+        <select name="dropdown"> <!--size="5" multiple="multiple"-->
+            <option value="mech">Mechanical</option>
+            <option value="it" selected>Information-technology</option>
+            <option value="civil">Civil</option>
+            <option value="elect">Electrical</option>
+            <option value="archi">Architecture</option>
+            </option>
+        </select>
+        <br>
+        <br>
+
+        User id:
+        <input type="text" name="user">
+        <br>
+        Password:
+        <input type="password" name="pass">
+        <br>
+        PIN:
+        <input type="password" name="pass" maxlength="4">
+        <br>
+        <br>
+        
+        Upload your passport size photo
+        <br>
+        <input type="file" name="file_ip" vlaue="file">
+    </fieldset>
+        <br>
+
+        <input type="submit" value="submit" name="enter">
+        <input type="reset" value="reset" name="reset">
+        <!-- <input type="image" value="img" name="img" src="../images/Iron-man.jpg" height="60" width="40">  -->
+        <br>
+        <br>
+        
+        Discription:
+        <br>
+        <textarea rows="8" cols="30">your desription goes here...</textarea>
+        <br>
+    </form>
+</body>
+</html>

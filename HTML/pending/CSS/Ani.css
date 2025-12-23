@@ -1,0 +1,71 @@
+.animate1{
+    border: 3px solid;
+    border-radius: 3px;
+    background-color: lightgreen;
+    font-size: 180px;
+    height: 240px;
+    width: 240px;
+    text-align: center;
+
+    animation: myFrame1;
+    animation-duration: 3s;
+}
+@keyframes myFrame1 {
+    from{margin-left: 0%;}
+    to{margin-left: 50%;}
+}
+
+.animate2{
+    border: 3px solid;
+    border-radius: 3px;
+    background-color: coral;
+    font-size: 40px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+
+    animation: myFrame2;
+    animation-duration: 2s;
+    /* animation-iteration-count: number/infinite; */
+    /* animation-iteration-count: 2; */
+    /* animation-delay: 2s; */
+    /* animation-direction: reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: myFrame2 3s linear 0s 2 forwards; */
+}
+@keyframes myFrame2 {
+    0%{background-color: skyblue; margin-left: 0px; margin-top:100px;}
+    25%{background-color: lightgreen; margin-left: 400px; margin-top:100px;}
+    50%{background-color: lightpink; margin-left: 400px; margin-top:200px;}
+    100%{background-color: blue; margin-left: 0px; margin-top:200px;}
+}
+  
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    animation: mymove 4s;
+}
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;background-color: yellow;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;background-color: yellow;}
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+.animate3{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    animation: myrotate;
+    animation-duration: infinite;
+}
+@keyframes myrotate{
+    100%{transform: rotateZ(360deg)}
+}

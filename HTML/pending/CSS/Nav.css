@@ -1,0 +1,45 @@
+.bar li{
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+    margin: 15px 10px;
+}
+.bar input{
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 930px;
+    margin-top: 15px;
+    padding-right: 5px;
+    font-family: monospace; 
+}
+
+.bar input:focus{
+    background-color: lemonchiffon;
+}
+
+.bar ul input::before{
+   content: g;
+}
+.bar ul{
+    overflow: auto;
+}
+
+.bar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.bar{
+    background-color: black;
+    border-radius: 45px;
+}
+
+.bar li{
+    font-family: sans-serif;
+}
+
+
+.bar li:hover{
+    background-color: #7d7;
+    border-radius: 20px;
+}

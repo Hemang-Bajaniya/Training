@@ -1,0 +1,19 @@
+li:nth-child(even){
+    background-color: skyblue;
+    color: tomato;
+}
+
+li:nth-child(odd){
+    background-color: lightcoral;
+}
+
+button{
+    border-radius: 3px;
+}
+button:active{
+    border: 2px dashed orange;
+    background-color: lightgreen;
+    color: white;
+    height: 30px;
+    width: 80px;
+}

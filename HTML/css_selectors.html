@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        body {
+            background-color: rgb(17, 23, 29);
+            font-family: poppins;
+            color: white;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        #head-1 {
+            color: blue;
+        }
+
+        p {
+            color: green;
+        }
+
+        li {
+            color: mediumaquamarine;
+        }
+
+        li:first-child {
+            color: slategray;
+        }
+
+        li:last-child {
+            color: slategray;
+        }
+
+        li {
+            list-style-type: circle;
+        }
+
+        .card {
+            text-align: center;
+            width: clamp(300px, 35%, 500px);
+            border: 2px solid white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .card h2 {
+            color: red;
+        }
+
+        .card p {
+            color: black;
+
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            /* outline: none; */
+        }
+
+        .card button {
+            background-color: red;
+            color: white;
+        }
+
+        form {
+            border: 2px solid white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        form input[type="text"] {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            /* outline: none; */
+        }
+
+        a {
+            /* color: yellow !important; */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a[href^="http"] {
+            color: red;
+        }
+
+        a[href^="https"] {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head-1">CSS Selectors</h1>
+
+    <p>CSS selectors are used to select the HTML elements you want to style.</p>
+    <p>They consist of one or more parts: an element selector, a property selector, a value selector, a combinator, and
+        a pseudo-class selector.</p>
+    <ul>
+        <li>Element selectors: <code>h1</code>, <code>p</code>, <code>div</code>, etc.</li>
+        <li>Property selectors: <code>[href]</code>, <code>[title]</code>, etc.</li>
+        <li>Value selectors: <code>[href="https://example.com"]</code>, <code>[title="Example"]</code>, etc.</li>
+        <li>Combinators: <code>div p</code>, <code>div > p</code>, etc.</li>
+        <li>Pseudo-class selectors: <code>:hover</code>, <code>:active</code>, etc.</li>
+    </ul>
+    <p>Examples:</p>
+    <ul>
+        <li><code>div p { ... }</code> selects all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code>
+            elements.</li>
+        <li><code>div > p { ... }</code> selects all <code>&lt;p&gt;</code> elements that are direct children of
+            <code>&lt;div&gt;</code> elements.
+        </li>
+        <li><code>div p:hover { ... }</code> selects all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code>
+            elements when hovered.</li>
+    </ul>
+
+    <button>Ok</button>
+
+    <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+        <h2>John Doe</h2>
+        <p>Software Engineer</p>
+
+        <button>View Profile</button>
+
+    </div>
+
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="" id="name">
+    </form>
+
+    <a href="https://www.google.com/">Google Safe link</a>
+    <br>
+    <a href="http://www.google.com/">Google Unsafe link</a>
+</body>
+
+</html>

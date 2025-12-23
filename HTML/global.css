@@ -1,0 +1,77 @@
+/* Global dark theme styles */
+body {
+    background-color: #121212;
+    /* Very dark gray background for comfort */
+    color: #e0e0e0;
+    /* Light gray text for good readability */
+    font-family: poppins;
+    margin: 5px 10px;
+    padding: 0;
+    line-height: 1.6;
+    list-style-type: none;
+}
+
+/* Links */
+a {
+    color: #82aaff;
+    /* Soothing blue for links */
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    /* Slightly brighter for headings */
+    margin-top: 0;
+}
+
+/* Buttons */
+button {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: none;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background-color: #555555;
+    outline: none;
+}
+
+/* Inputs & Textareas */
+input,
+textarea {
+    background-color: #222222;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #82aaff;
+    outline: none;
+}
+
+/* General container for content */
+.container {
+    padding: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+}

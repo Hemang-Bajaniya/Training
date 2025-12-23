@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img demo</title>
+    <style>
+        * {
+            font-family: poppins;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Image of an astronaut</h2>
+    <img height="900px"
+        src="https://images.unsplash.com/photo-1693495430456-25c0a37ec5dc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFzdHJvbmF1dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
+        alt="Iamge of an astronaut"
+        srcset="https://plus.unsplash.com/premium_photo-1680512467504-39224db53858?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXN0cm9uYXV0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500, https://images.unsplash.com/photo-1693495430456-25c0a37ec5dc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFzdHJvbmF1dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500">
+    <br>
+    <p>Your screen is</p>
+    <picture>
+        <!-- For large screens (laptops/desktops) -->
+        <source media="(min-width: 900px)" srcset="./assets/laptop.jpg">
+
+        <!-- For tablets -->
+        <source media="(min-width: 400px)" srcset="./assets/tablet.png">
+
+        <!-- For mobile devices -->
+        <img src="./assets/mobile.png" alt="Responsive device image">
+    </picture>
+
+
+</body>
+
+</html>

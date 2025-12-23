@@ -1,0 +1,41 @@
+.box{
+    position: absolute;
+}
+
+.box1{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    z-index: 1;
+    background-color: skyblue;
+    border: 1px solid;   
+    margin: auto;
+    visibility: visible;
+}
+.box2{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 250px;
+    width: 250px;
+    z-index: 2;
+    opacity: 0.8;
+    background-color: coral;
+    border: 1px solid;   
+    margin: auto;
+    visibility: visible;
+}
+.box3{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 250px;
+    width: 250px;
+    z-index: 3;
+    opacity: 0.6;
+    background-color: #7d7;
+    border: 1px solid;   
+    margin: auto;
+    visibility: visible;
+}
+
