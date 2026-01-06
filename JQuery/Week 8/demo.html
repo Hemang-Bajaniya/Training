@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- include jquery by cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!--Comment-->
+    <p>
+        DOM Manipulation
+    </p>
+    <a href="https://www.youtube.com/">YouTube</a>
+    <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+    <a href="http://scam.org/">Unsafe</a>
+
+    <!-- <script>
+        alert(document.firstChild)
+    </script> -->
+
+    <div class="nav">
+        <div class="">
+            <ul id="linkGroup">
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </div>
+    </div>
+
+    <table id="table">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <div class="article">
+        <h1>Javascript</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+    <div class="article">
+        <h1>Python</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+    <div class="article">
+        <h1>React.js</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+
+    <h1>Contents</h1>
+    <div class="contents">
+        <ul class="book">
+            <li class="chapter">Chapter 1</li>
+            <li class="chapter">Chapter 1</li>
+        </ul>
+    </div>
+
+    <div id="demo">
+        Hello
+        <!--Comment-->
+        <h1>hi</h1>
+        <!--Comment-->
+        <h3>h3</h3>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quam quidem consequatur, neque voluptates
+            temporibus reiciendis error laudantium, ut veniam accusamus eligendi! Et eius deserunt consectetur
+            assumenda. Mollitia, qui rerum!</p>
+    </div>
+
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="text" value='1500/-' disabled>
+
+        <button>Submit</button>
+    </form>
+
+    <script>
+        // let chapter = document.querySelector('.chapter'); // LI
+        // alert(chapter.closest('.book')); // UL
+        // alert(chapter.closest('.contents')); // DIV
+        // alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
+    </script>
+</body>
+
+<script>
+
+    // let articles = document.getElementsByClassName('article');
+    // articles = document.querySelectorAll('.article h1');
+
+    // Array.from(articles).forEach(element => {
+    //     element.style.color = 'blue';
+    // });
+
+    // write less, do more
+    $('.article h1').css('color', 'green');
+
+    // ele by class
+    $('.article p').css('text-decoration', 'underline');
+
+    // ele by id
+    console.log($("#table"));
+
+    $("a[href^='http:']").css('color', 'red');
+
+    $("h1, h2, h3").attr('title', 'header tags');
+
+    // save ele
+    var divs = $("div");
+
+    // Refining selections.
+    $("div.foo").has("p");         // div.foo elements that contain <p> tags
+    $("h1").not(".bar");           // h1 elements that don't have a class of bar
+    $("ul li").filter(".current"); // unordered list items with class of current
+    $("ul li").first();              // just the first unordered list item
+    $("ul li").eq(5);              // the sixth
+
+    //pseudo
+    console.log($('form :disabled'));
+
+    $('form *').focus((e) => {
+        console.log(e.target);
+    });
+
+    Array.from($('.article h1')).forEach(element => {
+        $(element).html("Article Title: " + $(element).html());
+    });
+
+
+</script>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event deligation</title>
+    <style>
+        td {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+        }
+
+        td:hover {
+            background: slategray;
+        }
+
+        td.highlight {
+            background: slategray;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" id="tbl" onclick="highlightTd(event)">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    Counter: <input type="button" value="1" data-counter>
+    One more counter: <input type="button" value="2" data-counter>
+    <script>
+        document.addEventListener('click', function (event) {
+            if (event.target.dataset.counter != undefined) { // if the attribute exists..
+                event.target.value++;
+            }
+        });
+    </script>
+
+    <button data-toggle-id="subscribe-mail">
+        Show the subscription form
+    </button>
+    <form id="subscribe-mail" hidden>
+        Your mail: <input type="email">
+    </form>
+    <script>
+        document.addEventListener('click', function (event) {
+            let id = event.target.dataset.toggleId;
+            if (!id) return;
+            let elem = document.getElementById(id);
+            elem.hidden = !elem.hidden;
+        });
+
+        setTimeout(() => {
+            let ev = new Event("click");
+            Array.from(document.getElementsByTagName("td")).forEach(e => {
+                e.dispatchEvent(ev);
+            });
+        }, 1000);
+    </script>
+</body>
+
+<script>
+    let selectedTd;
+    function highlightTd(e) {
+
+        if (e.target.tagName == "TD")
+            highlight(e.target);
+    }
+
+    function highlight(t) {
+        if (selectedTd)
+            selectedTd.classList.remove("highlight");
+
+        selectedTd = t;
+        selectedTd.classList.add("highlight");
+    }
+</script>
+
+</html>

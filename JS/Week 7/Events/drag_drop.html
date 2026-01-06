@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & drop events</title>
+    <style>
+        .ball {
+            height: 50px;
+            aspect-ratio: 1;
+            background-color: green;
+            border: 2px solid;
+            border-radius: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball" id="ball"></div>
+    <h3>Movable ball</h3>
+</body>
+
+<script>
+    let ball = document.getElementById("ball");
+
+    ball.onmousedown = (e) => {
+        ball.style.position = "absolute";
+        ball.style.zIndex = 999;
+
+        document.body.append(ball);
+
+        moveAt(e.pageX, e.pageY);
+    };
+
+    function moveAt(pageX, pageY) {
+        ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
+        ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
+    }
+
+    function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+    }
+
+    document.addEventListener('mousemove', onMouseMove);
+
+    ball.onmouseup = function () {
+        document.removeEventListener('mousemove', onMouseMove);
+        ball.onmouseup = null;
+    }; 
+</script>
+
+</html>

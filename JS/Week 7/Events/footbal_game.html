@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Field container */
+        #field {
+            width: 300px;
+            height: 180px;
+            background: #00ff33;
+            /* bright green */
+            border: 10px solid black;
+            position: relative;
+        }
+
+        /* dotted horizontal lines */
+        .dot-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            border-bottom: 2px dotted black;
+            left: 0;
+        }
+
+        /* football element */
+        #ball {
+            width: 40px;
+            height: 40px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg');
+            background-size: cover;
+            position: absolute;
+            top: 60px;
+            /* adjust to match your picture */
+            left: 180px;
+            /* adjust center */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="field">
+        <!-- dotted lines -->
+        <div class="dot-line" style="top: 20px;"></div>
+        <div class="dot-line" style="top: 50px;"></div>
+        <div class="dot-line" style="top: 80px;"></div>
+        <div class="dot-line" style="top: 110px;"></div>
+        <div class="dot-line" style="top: 140px;"></div>
+
+        <!-- football -->
+        <div id="ball"></div>
+    </div>
+
+</body>
+
+<script>
+    const field = document.getElementById("field");
+    const ball = document.getElementById("ball");
+    ball.style.position = "fixed";
+
+    const moveBall = (e) => {
+        ball.style.top = e.clientX + "px";
+        ball.style.left = e.clientY + "px";
+    };
+
+    field.addEventListener("mousedown", moveBall)
+</script>
+
+</html>

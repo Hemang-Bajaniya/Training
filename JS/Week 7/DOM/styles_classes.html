@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Style & Class Modification Demo</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: lightgray;
+            border: 2px solid #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .highlight {
+            background: gold;
+            border-color: orange;
+            transform: scale(1.1);
+        }
+
+        .rounded {
+            border-radius: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Modify styles-and-classes Test</h2>
+
+    <button onclick="changeStyle()">Change Inline Style</button>
+    <button onclick="toggleHighlight()">Toggle .highlight</button>
+    <button onclick="toggleRounded()">Toggle .rounded</button>
+
+    <h3>Accessbility</h3>
+    <span>Font size</span>
+    <button type="button" id="incBtn" onclick="decreaseFontsize()">-</button>
+    <button type="button" id="decBtn" onclick="increaseFontsize()">+</button>
+
+    <div id="box" class="box">Box</div>
+
+    <script>
+        const defaultFontSize = getComputedStyle(document.body).fontSize;
+        console.log(defaultFontSize);
+
+        const b1 = document.getElementById("incBtn");
+        const b2 = document.getElementById("decBtn");
+
+        function increaseFontsize(e) {
+            console.log(e);
+            let nextFontsize = Number.parseInt(getComputedStyle(document.body).fontSize ?? 16) + 5;
+
+            if (nextFontsize <= 100) {
+                document.body.style.fontSize = nextFontsize + "px";
+            }
+            else {
+            }
+        }
+
+        function decreaseFontsize() {
+            let nextFontsize = Number.parseInt(getComputedStyle(document.body).fontSize ?? 16) - 5;
+
+            if (nextFontsize >= 16) {
+                document.body.style.fontSize = nextFontsize + "px";
+            }
+        }
+
+
+
+        function changeStyle() {
+            const box = document.getElementById("box");
+            box.style.backgroundColor = box.style.backgroundColor === "lightblue" ? "lightgray" : "lightblue";
+            box.style.borderWidth = box.style.borderWidth === "5px" ? "2px" : "5px";
+        }
+
+        function toggleHighlight() {
+            document.getElementById("box").classList.toggle("highlight");
+        }
+
+        function toggleRounded() {
+            document.getElementById("box").classList.toggle("rounded");
+        }
+    </script>
+
+</body>
+
+</html>

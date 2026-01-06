@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery ele Manipulation</title>
+
+    <!-- include jquery by cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <button id="addBtn">Add</button>
+    <button id="remBtn">Remove Last</button>
+
+    <hr>
+
+    <div class="grandparent">grandparent
+        <div class="parent">parent
+            <div class="child">child
+                <span class="subchild"><br>subchild</span>
+            </div>
+        </div>
+        <div class="surrogateParent1">surrogateParent1</div>
+        <div class="surrogateParent2">surrogateParent2</div>
+    </div>
+</body>
+
+<script>
+    setInterval(() => {
+        $("#list li:first").appendTo($("#list"));
+        $("#list li").not("last-child").removeClass("highlight");
+        $("#list li").last().addClass("highlight");
+    }, 500);
+
+
+
+    $("#addBtn").click(function () {
+        let val = prompt("Enter value");
+        $('#list').append(`<li>${val}</li>`);
+    });
+
+    $("#remBtn").click(_ => {
+        let lastRemoved = $("#list li:last-child").remove();
+        console.log(lastRemoved);
+    });
+
+    // traverse
+    console.log($("span.subchild").parent()[0]);
+
+    console.log($("span.subchild").parents("div.parent").text());
+
+    console.log($("span.subchild").parents());
+
+    // until exclu
+    console.log($("span.subchild").parentsUntil("div.grandparent"));
+
+    // direct child
+    console.log($("div.grandparent").children("span"));
+
+    //find from all desc
+    console.log($("div.grandparent").find("span"));
+
+    //siblings
+    console.log($(".grandparent").prevAll(), $(".grandparent").next());
+
+    // returns [ div.surrogateParent1 ]
+    $("div.surrogateParent2").prevAll().first();
+
+    // returns [ div.parent ]
+    $("div.surrogateParent2").prevAll().last();
+
+    console.log($("hr").siblings());
+
+
+
+</script>
+
+</html>

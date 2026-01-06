@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    alert(document.cookie);
+
+    let user = prompt("Enter your name");
+    if (user != null)
+        document.cookie = `user=${user}; expires=Session;`;
+
+    alert(document.cookie);
+
+    document.cookie = "interest=smartphones; max-age:5";
+
+    // to work only with http
+    document.cookie = "token=2nrb34894;secure";
+
+    // send cookie if req from same site only to preveant xsrf
+    document.cookie = "token=2nrb34894;samesite=strict";
+
+    //prevant access from other than http/s access
+    document.cookie = "hidden;httpOnly=true";
+
+    /*The
+name=value pair, after 
+encodeURIComponent, should not exceed
+ 4kb. So we can’t store anything huge in a cookie.
+ The total number of cookies per domain is limited to around 20+, the exact
+ limit depends on a browser.*/
+
+    //  options
+
+    /*
+     document.cookie provides access to cookies
+ write operations modify only cookies mentioned in it.
+ name/value must be encoded.
+ one cookie up to 4kb, 20+ cookies per site (depends on a browser).
+
+
+ Cookie options:
+ path=/, by default current path, makes the cookie visible only under that path.
+ domain=site.com, by default a cookie is visible on current domain only, if set
+ explicitly to the domain, makes the cookie visible on subdomains.
+ expires or 
+max-age sets cookie expiration time, without them the cookie dies
+ when the browser is closed.
+ secure makes the cookie HTTPS-only.
+ samesite forbids the browser to send the cookie with requests coming from
+ outside the site, helps to prevent XSRF attacks
+ */
+
+    document.cookie
+</script>
+
+</html>

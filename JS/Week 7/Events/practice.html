@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Menu Demo
+    </title>
+    <style>
+        .filemenu {
+            cursor: pointer;
+        }
+
+        .menu-items {
+            z-index: 999;
+            position: absolute;
+            display: none;
+        }
+
+        .menu-items ul {
+            padding: .5rem 0;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: .5rem;
+            list-style-type: none;
+            background-color: rgb(240, 236, 236);
+            border-radius: 3px;
+        }
+
+        ul li:hover {
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+
+        #arrow {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="filemenu" id="menu-1">
+        <span id="arrow" style="color: green;">
+            ▶
+        </span> File
+    </span>
+    <div class="menu-items" id="menu-item">
+        <ul>
+            <li>Open</li>
+            <li>Save</li>
+            <li>Save As</li>
+        </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, aperiam accusantium, quaerat eaque impedit
+        odio vitae, sit nobis tempore fugiat! Nihil, ratione blanditiis? Possimus natus itaque ex mollitia in?</p>
+
+    <div class="article">
+        <h1>Javascript</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+    <div class="article">
+        <h1>Python</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+    <div class="article">
+        <h1>React.js</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo maiores dicta nesciunt. Enim asperiores,
+            quam expedita eius, pariatur minima necessitatibus distinctio ducimus praesentium officiis deserunt soluta
+            ea fuga obcaecati?</p>
+    </div>
+</body>
+
+<script>
+    let menu = document.getElementById("menu-1");
+    let menuItems = document.getElementById("menu-item");
+    let arrow = document.getElementById("arrow");
+
+    menu.addEventListener("click", () => {
+        let menuStyle = getComputedStyle(menuItems);
+
+        if (menuStyle.display === "none") {
+            menuItems.style.display = "block";
+            arrow.style.transform = "rotate(90deg)";
+        } else {
+            menuItems.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        }
+    });
+
+    Array.from(document.getElementsByClassName("article")).forEach(e => {
+
+        let closeButton = document.createElement("span");
+        closeButton.textContent = "[X]";
+        closeButton.style.color = "red";
+        closeButton.style.position = "absolute";
+        closeButton.style.top = "10px";
+        closeButton.style.right = "15px";
+        closeButton.style.cursor = "pointer";
+
+        e.style.position = "relative";
+        e.appendChild(closeButton);
+    });
+
+    Array.from(document.querySelectorAll(".article > span")).forEach(e => {
+        e.addEventListener("click", (e) => {
+            e.currentTarget.parentElement.style.display = "none";
+        });
+    })
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,25 @@
+* {
+    font-family: poppins;
+}
+
+.banner {
+    width: fit-content;
+    background-color: rgb(230, 225, 225);
+    color: black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px 2rem;
+    color: #444;
+    position: fixed;
+    bottom: 2rem;
+    /* font-size: .5rem; */
+}
+
+.banner button {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+}

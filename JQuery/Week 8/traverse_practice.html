@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Jq</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="box">
+        <button id="btn">Click</button>
+    </div>
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    <div class="card">
+        <p>Hello <span>World</span></p>
+    </div>
+
+    <div class="container">
+        <p>Direct</p>
+        <div>
+            <p>Nested</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <button>Delete</button>
+        </div>
+    </div>
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <button id="b1">Highlight</button>
+</body>
+
+<script>
+    //1. Parent Traversal
+    $(document).ready(() => {
+        // 1. Parent Traversal
+        $("#btn").parent().css("background", "red");
+
+        // 2. Children Selection
+        $("#menu li").css("color", "blue");
+        $("#menu li").css("color", "blue");
+
+        // 3. First & Last Element
+        $("#menu li").first().css("color", "red");
+        $("#menu li").last().css("color", "red");
+
+        $("#menu li").eq(0).css("color", "red");
+        $("#menu li").eq(-1).css("color", "red");
+
+        // 4. Next & Previous
+        $("#menu li").click(function () {
+            $(this).next().css("background", "yellow");
+        });
+
+        //5. Siblings (Except Current)
+        $("#menu li").click(function () {
+            $(this).css("border", "none");
+            $(this).siblings().not(this).css("border", "2px solid");
+        });
+
+        //6. Closest Ancestor
+        $('span').closest().css("border", "1px solid black");
+
+        // 7. Find vs Children
+        $(".container").children("p").css("color", "green");
+
+        //8. Traversing Multiple Levels
+        $("button").click(function () {
+            $(this).parents("div").eq(0).css("display", "none");
+        });
+
+        $("li").not(":last-child").css("text-decoration", "underline");
+
+        // 10. Dynamic Traversing
+        $("#b1").click(function () {
+            $(this)
+                .closest("ul")
+                .find("li:nth-child(odd)")
+                .css("color", "green");
+        });
+
+    })
+</script>
+
+</html>

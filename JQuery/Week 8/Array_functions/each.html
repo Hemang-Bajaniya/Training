@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Each in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        table {
+            font-family: poppins;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+
+        tr.credit {
+            background-color: rgb(38, 255, 121);
+        }
+
+        tr.debit {
+            background-color: rgb(255, 57, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <table id="ledgerTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2026-01-01</td>
+                <td>Credit</td>
+                <td>2500</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>2026-01-02</td>
+                <td>Debit</td>
+                <td>6000</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>2026-01-03</td>
+                <td>Credit</td>
+                <td>1200</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total Balance:</strong></td>
+                <td id="totalAmount">0</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <button id="auditBtn">Run Audit</button>
+</body>
+
+<script>
+    $(document).ready(function () {
+        // The Scenario: Ledger Audit Tool
+        // Imagine you have a table of transactions.We want to use jQuery to:
+
+        // 1 Calculate the Total Balance of all entries.
+        // 2 Highlight "Debit" entries in red and "Credit" entries in green.
+        // 3 Flag any transaction over $5,000 for manual review.
+
+        $("#auditBtn").click(function (e) {
+            e.preventDefault();
+
+            const entries = $("#ledgerTable tr");
+            let totalAmount = 0;
+
+            $.each(entries, function (i, entry) {
+                // skip 1 and last tr
+                if (i == 0 || i == entries.length - 1)
+                    return;
+
+                // grab all td cells
+                const cells = $(this).find("td");
+
+                // destruct val apro
+                const [date, type, amount, status] = cells.map(function () {
+                    return $(this).text().trim().toLowerCase();
+                });
+
+                // req man review or done
+                if (amount > 5000)
+                    $(this).find("td:eq(3)").text("Require Manual review");
+                else
+                    $(this).find("td:eq(3)").text("Done");
+
+                // add to total
+                totalAmount += parseInt(amount) || 0;
+
+                // style accordingly
+                if (type == "credit")
+                    $(this).addClass("credit");
+                else if (type == "debit")
+                    $(this).addClass("debit");
+
+                // show total amount
+                $("#totalAmount").text(totalAmount);
+            });
+
+            // $.each({ name: "John", lang: "JS" }, function (k, v) {
+            //     alert("Key: " + k + ", Value: " + v);
+            // });
+
+
+
+
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+        div {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="handleDiv"><span onclick="alert('span')">Click thid span
+            event of <b onclick="handleDiv">Div</b> will raised</span></div>
+
+    <div onclick="alert(`the bubbling doesn't reach here`)">
+        <button id="btn" onclick="event.stopPropagation()">Click me</button>
+    </div>
+</body>
+
+<script defer>
+    function handleDiv() {
+        console.log(`Div handler ${e.target}`);
+    }
+
+    btn.addEventListener("click", (e) => {
+        console.log("first time");
+
+        // stop bubbling event to parent node
+        // still all handlers on this node will exe
+        e.stopPropagation();
+
+        // also stop bubbling event to all other handler of same node
+        e.stopImmediatePropagation();
+
+    });
+
+    btn.addEventListener("click", (e) => {
+        console.log("second time");
+
+        // e.stopImmediatePropagation();
+    })
+
+
+</script>
+
+</html>

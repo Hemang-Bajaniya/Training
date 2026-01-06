@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll events</title>
+    <style>
+        body {
+            font-family: monospace;
+            line-height: 2;
+            padding: 10px;
+        }
+
+        a {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            height: 50px;
+            text-align: center;
+            display: grid;
+            font-size: 3rem;
+            color: black;
+            place-content: center;
+            text-decoration: none;
+            padding: 10px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: slategray;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="top">DoomScrolling</p>
+    <a href="#top">^</a>
+</body>
+<script>
+    // Fill body with text to fill page height
+    function fillPage() {
+        while (document.body.scrollHeight <= window.innerHeight) {
+            const now = new Date().toLocaleTimeString();
+            const line = document.createElement('div');
+            line.textContent = `${now} - Line ${document.body.children.length}`;
+            document.body.appendChild(line);
+        }
+    }
+
+    fillPage();
+
+    window.onscroll = (e) => {
+        const now = new Date().toLocaleTimeString();
+        const line = document.createElement('div');
+        line.textContent = `${now} - Line ${document.body.children.length}`;
+        document.body.appendChild(line);
+    }
+</script>
+
+</html>

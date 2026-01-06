@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        a {
+            color: greenyellow;
+        }
+
+        .unvisited {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <a href="http://example.com/">Example</a>
+
+    <p>Hello</p>
+
+
+    <p id="p1">
+        Hey Hi
+    </p>
+
+    <button>1</button><button>2</button><button>3</button>
+
+    <span id="q-list">
+        <h3>Question?</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </span>
+
+    <div id="box">
+        Hello
+    </div>
+
+    <br>
+    <br>
+
+    <form id="frm" style="border: 1px solid;width: fit-content; padding: 1rem;">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" id="name">
+
+        <hr>
+        <label for="password">Enter password</label>
+        <input type="password" id="password">
+
+        <hr>
+        <button type="submit" id="submit">Enter</button>
+    </form>
+</body>
+
+<script defer>
+    // window.onload = _ => { alert('Window loaded'); }
+
+    $(document).ready(_ => {
+        alert('Window loaded');
+
+        $('a').click(function (e) {
+            // remove a class, referring this
+            $(this).removeClass('unvisited');
+            alert('Thanks for visiting');
+
+
+            e.preventDefault();
+        });
+
+        // add class
+        $('a').addClass('unvisited');
+
+
+        $("p").dblclick(function () {
+            $(this).hide();
+        });
+
+        $("#p1").mouseenter(function () {
+            alert("You entered p1!");
+        });
+
+        $(document).mousemove((e) => {
+            console.log(`Mouse at ${e.clientX}, ${e.clientY}`);
+        });
+
+        $("button").click(function (e) {
+            console.log(e.target);
+            $(this).css("background", "orange");
+        });
+
+        // firing events
+        $("button").not("#submit").trigger("click");
+
+        $("#q-list").select(function (e) {
+            e.preventDefault();
+
+            alert("Alert!!");
+        });
+
+        $("#box").on("colorChange", function (e, color) {
+            $(this).css("color", color);
+        });
+
+        $("#box").trigger("colorChange", ["green"]);
+
+        $("#frm").on("valid", _ => {
+
+            $("#frm input").css("background", "green");
+
+            alert("Valid form data");
+            console.log($("#name").val(), $("#password").val());
+
+        });
+
+        $("#frm").on("invalid", _ => {
+
+            $("#frm input").css("background", "red");
+
+            alert("Invalid form data");
+            console.log($("#name").val(), $("#password").val());
+
+        });
+
+        $("#submit").click((e) => {
+            e.preventDefault();
+
+            if ($("#name").val().length >= 4 && $("#password").val().length >= 8)
+                $("#frm").trigger("valid");
+            else
+                $("#frm").trigger("invalid");
+
+        });
+
+    });
+
+    // Passing a named function instead of an anonymous function.
+
+    function readyFn(jQuery) {
+        console.log("Ok");
+
+    }
+
+    $(document).ready(readyFn);
+    // or:
+    $(window).on("load", readyFn);
+
+    $("a").attr("title", "anchor links");
+
+
+    console.log($("a").get().attr("title"));
+
+
+
+
+</script>
+
+</html>

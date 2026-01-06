@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grep in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .filter {
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="filter">
+        <label><input type="checkbox" id="selectAdmin"> Select Admin</label><br>
+        <label><input type="checkbox" id="onlyActive"> Only Active User</label>
+    </div>
+
+    <select id="userList">
+        <option value="" selected disabled>Select a user</option>
+    </select>
+
+</body>
+
+<script>
+    const createUserOptions = (arr) => {
+        let userOptions = `<option value="" selected disabled>Select a user</option>`;
+        $.map(arr, function (user, i) {
+            if (user.id !== 0) // Skip the placeholder if it's in the array
+                userOptions += `<option value="${user.id}">${user.name}</option>`;
+        });
+
+        return userOptions;
+    };
+    const users = [
+        { id: 0, name: "Select User", role: "admin", active: true },
+        { id: 1, name: "Alice", role: "admin", active: true },
+        { id: 2, name: "Bob", role: "user", active: true },
+        { id: 3, name: "Charlie", role: "user", active: false },
+        { id: 4, name: "David", role: "admin", active: false }
+    ];
+    $(document).ready(function () {
+        // Grep
+        // Description: Finds the elements of an array which satisfy a filter function. The original array is not affected.
+
+        // $.grep(array, callback, invert)
+        // - callback returns true for items to keep
+        // - invert = true reverses the result
+
+        console.log(this);
+
+        let userOptions = createUserOptions(users);
+        $("#userList").html(userOptions);
+
+        // select only admin users 
+        $("#selectAdmin").change(function (e) {
+            updateUserList();
+        });
+
+        //  select only active users 
+        $("#onlyActive").change(function (e) {
+            updateUserList();
+        });
+
+        function updateUserList() {
+            let filteredUsers = $.grep(users, user => user.id !== 0); // Exclude placeholder from filtering
+            if ($("#selectAdmin").is(":checked")) {
+                filteredUsers = $.grep(filteredUsers, function (user) {
+                    return user.role.toLowerCase() === "admin";
+                });
+            }
+
+            // invert true
+            if ($("#onlyActive").is(":checked")) {
+                filteredUsers = $.grep(filteredUsers, function (user) {
+                    return !user.active;
+                }, true);
+            }
+            $("#userList").html(createUserOptions(filteredUsers));
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,34 @@
+* {
+    font-family: poppins;
+}
+
+.bulb {
+    width: 120px;
+    height: 120px;
+    background: #ccc;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    transition: .3s ease-out;
+}
+
+/* bulb is on */
+.bulb.on {
+    background: #ffeb3b;
+}
+
+#switch {
+    padding: .8rem 2rem;
+    color: black;
+    background-color: #ffeb3b;
+    border-radius: 50vh;
+    border: none;
+    margin: 10px auto;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* switch is pressed */
+#switch.pressed {
+    background-color: white;
+}

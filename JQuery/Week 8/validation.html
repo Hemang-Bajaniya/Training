@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            outline: none;
+            font-family: poppins;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            margin: 0;
+        }
+
+        .form-container {
+            margin: 1rem auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox {
+            margin-bottom: 15px;
+        }
+
+        input.invalid {
+            color: red;
+            border-color: red;
+        }
+
+        input.valid {
+            color: black;
+            border-color: rgb(109, 163, 27);
+        }
+
+        input.invalid::after {
+            content: "Invalid input";
+            color: red;
+            font-size: 12px;
+            display: block;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="in">India</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>  -->
+
+            <div class="checkbox" style="display: flex; justify-content: space-evenly;">
+                <input type="checkbox" id="terms" name="terms" required style="width: fit-content;">
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+<script>
+    $(document).ready(() => {
+        let isNameValid, isEmailValid, isPasswordValid, isRePasswordValid, isPhonenoValid = false;
+
+        $("#fullname").focusout(function () {
+            const name = $(this).val();
+        });
+
+        $("#email").focusout(function () {
+
+        });
+
+        $("#password").focusout(function () {
+
+        });
+
+        $("#confirmPassword").focusout(function () {
+
+        });
+
+        $("#phone").focusout(function () {
+
+        });
+
+    })
+</script>
+
+</html>

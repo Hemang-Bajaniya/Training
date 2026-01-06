@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async await demo</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="" alt="user avatar" id="avatar">
+</body>
+
+<script>
+    let userName = prompt("Enter your github username");
+
+    loadUserAvatar(userName);
+
+    async function loadUserAvatar(userName) {
+        try {
+            let response = await fetch(`https://api.github.com/users/${userName}`);
+
+            // Check if the response is OK (status 200-299)
+            if (!response.ok) {
+                throw new Error(`User not found: ${response.status} ${response.statusText}`);
+            }
+
+            let data = await response.json();
+            document.getElementById('avatar').src = data.avatar_url;
+        } catch (error) {
+            console.error('Error loading avatar:', error);
+            // Optionally, set a fallback image or show a message
+            document.getElementById('avatar').src = 'https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2281862025.jpg';
+        }
+    }
+</script>
+
+</html>

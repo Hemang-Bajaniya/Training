@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript" lang="javascript">
+    "use strict";
+    // use ; as delimiter
+    alert("Hello, World!"); console.log("hi"); // other stat
+
+    alert("Hello");
+    [1, 2].forEach(alert);
+
+    function sum(...args) {
+        return args.reduce((total, n) => total + n, 0);
+    }
+
+    console.log(sum(1, 2, 3));     // 6
+    console.log(sum(5, 10, 15));  // 30
+
+    function showArguments() {
+        console.log(arguments);
+        console.log(arguments[0]);
+        console.log(arguments.length);
+    }
+
+    showArguments(10, 20, 30);
+
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+
+    <!--To link external files-->
+    <script src="test.js">
+        // alert("Loaded external script") ignored as src set
+    </script>
+    <!-- <script src="test.js"></script> -->
+
+</head>
+
+<body>
+    <h1>JS Demo</h1>
+</body>
+
+</html>

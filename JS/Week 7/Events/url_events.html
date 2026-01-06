@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Events</title>
+    <style>
+        * {
+            background-color: rgb(21, 21, 31);
+            font-family: poppins;
+            color: whitesmoke;
+        }
+
+        .banner {
+            background-color: rgb(49, 49, 59);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 5rem;
+            padding: 2.2rem 2rem;
+            width: fit-content;
+        }
+
+        #highlight {
+            font-size: 1.5rem;
+            color: orangered;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        You are currently at <span id="highlight">Home</span> Page
+    </div>
+
+
+    <section id="sec_1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus nesciunt autem ipsam. Dolorum, repellat
+        sapiente. Placeat amet expedita soluta! Molestias, ad dolores perspiciatis id ipsa eligendi quos iure quibusdam?
+    </section>
+</body>
+
+<script>
+    window.addEventListener("load", (e) => {
+        console.log(this.location.href, this.location.hash, this.location.origin);
+    });
+
+    window.addEventListener("load", _ => updateUi(this.location.hash));
+    window.addEventListener("hashchange", _ => updateUi(this.location.hash));
+
+    window.addEventListener("popstate", (event) => {
+        console.log("URL changed:", location.pathname);
+        console.log("State:", event.state);
+    });
+
+
+    function updateUi(hash) {
+        highlight.textContent = hash;
+    }
+</script>
+
+</html>

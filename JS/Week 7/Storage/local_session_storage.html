@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and session storage</title>
+</head>
+
+<body>
+    <button id="log_btn">Log time</button>
+</body>
+
+<script>
+    // why
+    // not sent o req, more data to store 2mb
+    // no cross site data sharing
+    // not mani by http req
+
+    // localStorage.setItem('test', 'demo');
+    // alert(localStorage.getItem('test'));
+
+    // const user = { name: "Alex" };
+    // localStorage.setItem('user', JSON.stringify(user));
+
+    // for (const key in localStorage) {
+    //     if (!Object.hasOwn(localStorage, key)) continue;
+
+    //     const element = localStorage[key];
+
+    //     alert(element);
+    // }
+
+    // // stringify whole obj
+    // console.log(JSON.stringify(localStorage));
+
+    log_btn.addEventListener("click", (e) => {
+        localStorage.setItem('now', Date.now());
+    });
+
+    window.onstorage = e => {
+        if (e.key != "now")
+            return;
+
+        alert(`Now old:${e.oldValue} new:${e.newValue} updated by:${e.url}`);
+    }
+
+</script>
+
+</html>

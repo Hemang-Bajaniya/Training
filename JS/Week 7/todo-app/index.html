@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimal Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="app">
+        <h1 class="title">Todos</h1>
+
+        <form id="todo-form" class="todo-form" autocomplete="off">
+            <input id="todo-input" class="todo-input" type="text" placeholder="Add a new todo..." maxlength="150"
+                required />
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <section id="todos" class="todos" aria-live="polite"></section>
+
+        <footer class="footer">Double-click a tile to toggle complete.</footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

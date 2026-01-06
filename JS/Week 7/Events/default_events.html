@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default event</title>
+</head>
+
+<body>
+    <a href="/" onclick="return false">Click</a>
+    <a href="/"></a>
+
+    <input value="Focus works" onfocus="this.value=''">
+    <input onmousedown="return false" onfocus="this.value=''" value="Click me">
+
+    <h2 class="question">Javascript invented by?</h2>
+    <ul>
+        <li>Linus torwald</li>
+        <li>Ken thompson</li>
+        <li>Breinden eich</li>
+        <li>Dennies ritchie</li>
+    </ul>
+
+    <button>Right-click for browser context menu</button>
+    <button oncontextmenu="alert('Draw our menu'); return false">
+        Right-click for our context menu
+    </button>
+
+    <p>Right-click here for the document context menu</p>
+    <button id="elem">Right-click here for the button context menu</button>
+    <script>
+        elem.oncontextmenu = function (event) {
+            event.preventDefault();
+            alert("Button context menu");
+            event.stopPropagation();
+        };
+        document.oncontextmenu = function (event) {
+            event.preventDefault();
+            alert("Document context menu");
+        };
+    </script>
+</body>
+
+<script>
+    Array.from(document.getElementsByClassName("question")).forEach(e => {
+        e.addEventListener("select", () => {
+            return false;
+        });
+    })
+</script>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- include jquery by cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #traffic-light {
+            width: 100px;
+            height: 300px;
+            background-color: #333;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .light {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #555;
+        }
+
+        .red {
+            background-color: #ff0000;
+        }
+
+        .yellow {
+            background-color: #ffff00;
+        }
+
+        .green {
+            background-color: #00ff00;
+        }
+
+        .off {
+            background-color: #666;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="traffic-light">
+        <div class="light red off"></div>
+        <div class="light yellow off"></div>
+        <div class="light green off"></div>
+    </div>
+
+    <button id="start">Start Signal</button>
+    <button id="stop">Emergency Stop</button>
+    <button id="resume">Resume</button>
+</body>
+
+<script>
+    let timer = null;
+    let signals = ["red", "yellow", "green"];
+    let signalTimes = {
+        red: 5000,
+        yellow: 2000,
+        green: 5000
+    };
+    let currentIndex = 0;
+    let isEmergency = false;
+
+    $(document).ready(function () {
+
+        $("#traffic-light").on("signal:start", function () {
+            if (timer) return; // prevent multiple intervals
+
+            $(this).trigger("signal:change", [signals[currentIndex]]);
+        });
+
+        $("#traffic-light").on("signal:change", function (e, color) {
+            if (isEmergency) return;
+
+            $(".light").addClass("off");
+            $("." + color).removeClass("off");
+
+            timer = setTimeout(() => {
+                currentIndex = (currentIndex + 1) % signals.length;
+                $(this).trigger("signal:change", [signals[currentIndex]]);
+            }, signalTimes[color]);
+        });
+
+        $("#traffic-light").on("signal:emergency", function () {
+            isEmergency = true;
+            clearTimeout(timer);
+            timer = null;
+
+            $(".light").addClass("off");
+            $(".red").removeClass("off");
+            currentIndex = 0; // reset to red
+        });
+
+        $("#traffic-light").on("signal:resume", function () {
+            if (!isEmergency) return;
+
+            isEmergency = false;
+            $(this).trigger("signal:start");
+        });
+
+        $("#start").on("click", function () {
+            $("#traffic-light").trigger("signal:start");
+        });
+
+        $("#stop").on("click", function () {
+            $("#traffic-light").trigger("signal:emergency");
+        });
+
+        $("#resume").on("click", function () {
+            $("#traffic-light").trigger("signal:resume");
+        });
+    });
+</script>
+
+
+</html>

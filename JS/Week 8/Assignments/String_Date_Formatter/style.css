@@ -1,0 +1,49 @@
+* {
+    font-family: poppins;
+    background-color: #0e0c14;
+    color: white;
+    border: none;
+}
+
+.timer {
+    font-family: consolas;
+    color: greenyellow;
+    text-align: center;
+    margin: 1rem auto;
+    background-color: #211e2b;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+input {
+    border: 2px solid white;
+    padding: 4px 2px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: white;
+    padding: 4px 8px;
+    color: black;
+    border-radius: 50vh;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-rows: repeat(3);
+    gap: 1rem;
+    width: fit-content;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    margin-top: 3rem;
+}
+
+#userId {
+    text-align: center;
+}

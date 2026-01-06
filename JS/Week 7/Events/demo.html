@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grass + Football + Event Elements</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.imgur.com/9jv1YfC.jpg');
+            /* grass texture */
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* Container to make form readable on grass */
+        .panel {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 350px;
+            margin-bottom: 30px;
+        }
+
+        .block {
+            margin-bottom: 18px;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a047;
+        }
+
+        select {
+            background: #fff;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        /* Football element */
+        #football {
+            width: 120px;
+            height: 120px;
+            background: url('https://i.imgur.com/Rt5y3pC.png');
+            /* football image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 25px 0;
+            transition: transform .2s;
+        }
+
+        #football:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Grass Background + Football + Event Elements</h2>
+
+    <div class="panel">
+
+        <!-- Football on grass -->
+        <div id="football"></div>
+
+        <div class="block">
+            <button id="btn">Button</button>
+        </div>
+
+        <div class="block">
+            <input id="inputText" type="text" placeholder="Type something...">
+        </div>
+
+        <div class="block">
+            <input id="checkbox" type="checkbox"> Check me
+        </div>
+
+        <div class="block">
+            <select id="selectBox">
+                <option value="">Choose…</option>
+                <option value="a">Option A</option>
+                <option value="b">Option B</option>
+            </select>
+        </div>
+
+        <div class="block">
+            <form id="testForm">
+                <input type="text" name="username" placeholder="Username">
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+
+        <div class="block">
+            <a id="link" href="#" style="color:#aee3ff;">A Link</a>
+        </div>
+
+        <div class="block">
+            <textarea id="textarea" rows="3" placeholder="Write something..."></textarea>
+        </div>
+
+    </div>
+
+    <input type="text" placeholder="eg:(+91)9482493727" onkeydown="return isValidPhoneNo(event.key)" maxlength="16"
+        minlength="10">
+
+</body>
+
+<script>
+    const isValidPhoneNo = (key) => {
+        return (key == "+" || key <= "9" && key >= "0" || key == "Backspace" || key == "(" || key == ")");
+    };
+
+    document.onkeydown = (e) => {
+        console.log(e.keyCode);
+
+    }
+</script>
+
+</html>

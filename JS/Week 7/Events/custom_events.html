@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom events</title>
+</head>
+
+<body>
+    <button id="loginBtn">Login</button>
+
+    <script>
+        document.addEventListener("userLoggedIn", (e) => {
+            console.log("Welcome:", e.detail.username, e.detail.loginTime);
+        });
+
+        loginBtn.addEventListener("click", () => {
+            const event = new CustomEvent("userLoggedIn", {
+                detail: { username: "alice", loginTime: Date() },
+            },);
+
+            document.dispatchEvent(event);
+        });
+    </script>
+
+</body>
+
+</html>

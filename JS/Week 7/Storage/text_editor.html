@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+</head>
+
+<body>
+    <form>
+        <textarea name="textarea" id="textarea" rows="10" cols="50" placeholder="Write here">
+        </textarea>
+        <button type="reset" onclick="localStorage.removeItem('data')">Clear</button>
+    </form>
+</body>
+
+<script>
+    textarea.value = localStorage.getItem('data');
+
+    textarea.oninput = () => {
+        localStorage.setItem('data', textarea.value);
+    }
+</script>
+
+</html>

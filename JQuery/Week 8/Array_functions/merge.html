@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: poppins;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+
+        tr.credit {
+            background-color: rgb(38, 255, 121);
+        }
+
+        tr.debit {
+            background-color: rgb(255, 57, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ledger Entries</h2>
+    <table id="ledgerTable" border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debit</th>
+                <th>Credit</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br>
+    <button id="loadMoreBtn">Load more entries</button>
+</body>
+
+<script>
+    let visibleEntries = [];
+    let loadedCount = 0;
+
+    const defaultEntries = 3, moreEntries = 2;
+
+    let ledgerEntries = [
+        {
+            date: "2023-01-01",
+            description: "Opening Balance",
+            debit: "",
+            credit: "",
+        },
+        {
+            date: "2023-01-02",
+            description: "Deposit",
+            debit: "",
+            credit: "500.00",
+        },
+        {
+            date: "2023-01-03",
+            description: "Withdrawal",
+            debit: "200.00",
+            credit: "",
+        },
+        {
+            date: "2023-01-04",
+            description: "Payment",
+            debit: "100.00",
+            credit: "",
+        },
+        {
+            date: "2023-01-05",
+            description: "Interest",
+            debit: "",
+            credit: "50.00",
+        },
+        {
+            date: "2023-01-06",
+            description: "Payment",
+            debit: "150.00",
+            credit: "",
+        },
+        {
+            date: "2023-01-10",
+            description: "Interest",
+            debit: "",
+            credit: "50.00",
+        },
+    ];
+
+    const createLedgerEntries = (arr) => {
+        let entries = "";
+        $.each(arr, function (i, entry) {
+            entries += "<tr>";
+            $.each(entry, function (key, val) {
+                entries += `<td>${val ?? ""}</td>`;
+            });
+            entries += "</tr>";
+        });
+
+        return entries;
+    };
+
+    $(document).ready(function () {
+        // load inital entries, keep track
+        visibleEntries = ledgerEntries.slice(0, defaultEntries);
+        loadedCount = visibleEntries.length;
+
+        $("#ledgerTable tbody").html(createLedgerEntries(visibleEntries));
+        $("#loadMoreBtn").text(`Load more entries(${ledgerEntries.length - loadedCount})`);
+
+        $("#loadMoreBtn").click(function (e) {
+            e.preventDefault();
+
+            // calc remaining entries
+            let nextEntries = ledgerEntries.slice(loadedCount, loadedCount + moreEntries);
+
+            if (!nextEntries.length) {
+                $(e.target).attr("disabled", "disabled");
+                $(this).css("cursor", "not-allowed");
+                return;
+            }
+
+            $.merge(visibleEntries, nextEntries);
+
+            loadedCount = visibleEntries.length;
+
+            $("#ledgerTable tbody").html(createLedgerEntries(visibleEntries));
+
+            $(this).text(`Load more entries(${ledgerEntries.length - loadedCount})`);
+        });
+    });
+</script>
+
+</html>

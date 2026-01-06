@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent,
+        .child {
+            border: 2px solid;
+            border-radius: 3px;
+        }
+
+        .parent {
+            display: grid;
+            place-items: center;
+            padding: 4rem;
+            background: red;
+        }
+
+        .child {
+            height: 14rem;
+            aspect-ratio: 1;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Hover or Click me</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            console.log("Button clicked");
+        });
+
+        btn.addEventListener("dblclick", () => {
+            console.log("Double clicked");
+        });
+
+        btn.addEventListener("mouseenter", () => {
+            console.log("Mouse entered");
+        });
+
+        btn.addEventListener("mouseleave", () => {
+            console.log("Mouse left");
+        });
+
+        btn.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            console.log("Right click detected");
+        });
+    </script>
+
+    <input id="text" placeholder="Type something" />
+
+    <script>
+        const input = document.getElementById("text");
+
+        input.addEventListener("keydown", (e) => {
+            console.log("Key down:", e.key);
+        });
+
+        input.addEventListener("keyup", (e) => {
+            console.log("Key up:", e.key);
+        });
+
+        // Detect shortcut
+        document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && e.key === "s") {
+                e.preventDefault();
+                console.log("CTRL + S pressed");
+            }
+        });
+    </script>
+
+    <form id="myForm">
+        <input name="username" placeholder="Username" />
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("Form submitted");
+        });
+
+        form.username.addEventListener("input", (e) => {
+            console.log("Typing:", e.target.value);
+        });
+
+        form.username.addEventListener("focus", () => {
+            console.log("Input focused");
+        });
+
+        form.username.addEventListener("blur", () => {
+            console.log("Input lost focus");
+        });
+    </script>
+
+    <div id="drag" draggable="true" style="width:100px; padding:10px; background:lightblue;">
+        Drag me
+    </div>
+
+    <div id="drop" style="width:200px; height:100px; border:2px dashed black;">
+        Drop here
+    </div>
+
+    <h3>Hover mouse over elements to see mouse events</h3>
+    <div class="parent" id="parent" onmouseenter="mouselog(event)" onmouseleave="mouselog(event)"
+        onmouseover="mouselog(event)" onmouseout="mouselog(event)">
+        Parent element
+        <div class="child" id="child" onmouseenter="mouselog(event)" onmouseleave="mouselog(event)"
+            onmouseover="mouselog(event)" onmouseout="mouselog(event)">Inner child element</div>
+    </div>
+
+    <script>
+        const dragItem = document.getElementById("drag");
+        const dropArea = document.getElementById("drop");
+
+        dragItem.addEventListener("dragstart", () => {
+            console.log("Drag started");
+        });
+
+        dropArea.addEventListener("dragover", (e) => {
+            e.preventDefault(); // required
+        });
+
+        dropArea.addEventListener("drop", () => {
+            console.log("Dropped!");
+        });
+    </script>
+
+    <iframe id="myFrame" src="https://example.com"></iframe>
+
+    <script>
+        const frame = document.getElementById("myFrame");
+
+        const mouselog = (e) => {
+            console.log(`${e.type}: ${e.target.id}`);
+        };
+
+        frame.addEventListener("load", () => {
+            console.log("iFrame loaded");
+        });
+
+        frame.contentWindow.postMessage("Hello iframe", "*");
+
+        window.addEventListener("message", (e) => {
+            console.log("Message from iframe:", e.data);
+        });
+
+        window.addEventListener("load", () => {
+            console.log("Page fully loaded");
+        });
+
+        window.addEventListener("resize", () => {
+            console.log("Window resized");
+        });
+
+        document.addEventListener("scroll", () => {
+            console.log("Scrolling...");
+        });
+    </script>
+
+
+
+</body>
+
+<script>
+    document.addEventListener("click", (event) => {
+        console.log(event.type);
+        console.log(event.target);
+        console.log(event.clientX, event.clientY);
+    });
+
+</script>
+
+</html>
+
+
+<!--url, media, -->
